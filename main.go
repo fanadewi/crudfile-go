@@ -25,6 +25,7 @@ func init() {
 func main() {
 	conf := config.New()
 	r := gin.Default()
+	r.MaxMultipartMemory = 8 << 20 // 8 MiB
 	r.Use(gin.Logger())
 	r.POST("/upload", c.UploadCloudinary)
 

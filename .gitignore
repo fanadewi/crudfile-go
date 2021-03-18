@@ -1,0 +1,4 @@
+crudfile-go
+.env
+tmp/*
+logs/*
